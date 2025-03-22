@@ -7,7 +7,7 @@ Data engineer project of Realtime Data Streaming using Kafka with Zookeeper, Doc
 
 
 # How it works
- - Airflow runing on PostgreeSQL will fetch data from open API.
+ - Airflow runing on PostgreeSQL will fetch data from open API. https://randomuser.me/
  - This data got by the API will be streaming to KAFKA which is sitting on Apache Zookeeper which is the manager all mutiple brockers that we have on Kafka. Data inside Kafka will be seen in Control Center as a UI (can see the n) and Schema Registry it provides us a seven layer for the metadata.
  - When the data will streamed to Apache Spark cluster job (by a listener), the master will decides which of the workers takes up.
  - When the taks if done will be streamed up to Cassandra (by listener)
